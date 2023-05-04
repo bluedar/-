@@ -265,12 +265,17 @@ const createAll = (modelObj)=>{
       ipad_price.innerText = prices
     })
   }
-
+  // 내용 생성기
+  const createPurchase = ()=>{
+    const purchase = document.querySelectorAll('.grid_col > div:nth-child(3) > span')
+    console.log(purchase)
+  }
 
 
   createPadImg()
   createcolor()
   createPrice()
+  createPurchase()
 }
 
 

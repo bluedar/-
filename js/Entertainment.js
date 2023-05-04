@@ -56,9 +56,9 @@ const prevClick = ()=>{
     chapWidth = chapWidth+chapLis[i].offsetWidth+20
   }
 
-  
   if(chapNum === 0){
     prev.classList.add('on')
+    chapWidth = 0
   }
   if(chapNum === 2){
     next.classList.remove('on')
