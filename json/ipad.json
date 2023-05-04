@@ -9,7 +9,9 @@
       "colors1":"스페이스 그레이",
       "colors2":"실버",
       "cssColor1":"space_gray",
-      "cssColor2":"silver"
+      "cssColor2":"silver",
+      "modelPrice":"₩1,729,000부터",
+      "modelCellularPrice":"₩1,969,000부터"
     },
     {
       "id":2,
@@ -20,7 +22,9 @@
       "colors1":"스페이스 그레이",
       "colors2":"실버",
       "cssColor1":"space_gray",
-      "cssColor2":"silver"
+      "cssColor2":"silver",
+      "modelPrice":"₩1,249,000부터",
+      "modelCellularPrice":"₩1,489,000부터"
     },
     {
       "id":3,
@@ -40,7 +44,9 @@
       "cssColor2":"star_light",
       "cssColor3":"pink",
       "cssColor4":"puple",
-      "cssColor5":"blue"
+      "cssColor5":"blue",
+      "modelPrice":"₩929,000부터",
+      "modelCellularPrice":"₩1,169,000부터"
       
     },
     {
@@ -58,7 +64,9 @@
       "cssColor1":"silver",
       "cssColor2":"pink",
       "cssColor3":"blue",
-      "cssColor4":"yellow"
+      "cssColor4":"yellow",
+      "modelPrice":"₩679,000부터",
+      "modelCellularPrice":"₩919,000부터"
     },
     {
       "id":5,
@@ -69,7 +77,9 @@
       "colors1":"스페이스 그레이",
       "colors2":"실버",
       "cssColor1":"space_gray",
-      "cssColor2":"silver"
+      "cssColor2":"silver",
+      "modelPrice":"₩499,000부터",
+      "modelCellularPrice":"₩699,000부터"
     },
     {
       "id":6,
@@ -86,7 +96,9 @@
       "cssColor1":"space_gray",
       "cssColor2":"star_light",
       "cssColor3":"pink",
-      "cssColor4":"puple"
+      "cssColor4":"puple",
+      "modelPrice":"₩769,000부터",
+      "modelCellularPrice":"₩1,009,000부터"
     }
   ]
 }

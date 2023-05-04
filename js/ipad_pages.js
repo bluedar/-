@@ -142,14 +142,12 @@ const change = (e)=>{
         }
     })
   })
-  //console.log(filterValue)
 
   /* 객체에 받아둔 벨류정보를 보기쉽게 꺼내온다. */
   const model1 =filterValue.filterValue1
   const model2 =filterValue.filterValue2
   const model3 =filterValue.filterValue3
 
-  console.log(model1,model2,model3)
 
   /*
   1번 벨류와 제이슨 네임을 비교해서 같은 정보를 가지고 있는지 비교
@@ -168,11 +166,7 @@ const change = (e)=>{
   const modelObj3 = products.data.find((modelObj)=>{
     return modelObj.name === model3
   })
-  console.log(modelObj1)
-  console.log(modelObj2)
-  console.log(modelObj3)
   const modelObj = [modelObj1,modelObj2,modelObj3]
-  console.log(modelObj)
   // 가져온 제이슨 정보로 데이터들은 변경시키기
   
 
@@ -202,7 +196,7 @@ const removeAll = ()=>{
       ipadColor.remove()
     })
   }
-
+  
   //removeAll 실행시 아이패드 이미지를 삭제해주는 함수실행
   removePadImg()
   removeColor()
@@ -252,9 +246,31 @@ const createAll = (modelObj)=>{
       firstButton.classList.add('on')
   })
   }
+  // 가격 생성기
+  const createPrice = ()=>{
+    const ipad_prices = document.querySelectorAll('.ipad_price_Wrap .ipad_price:nth-child(3)')
+    const ipad_Celprices = document.querySelectorAll('.ipad_price_Wrap .ipad_price:nth-child(4)')
+    //wifi model price 넣기
+    ipad_prices.forEach((ipad_price,index)=>{
+      const prices = Object.keys(modelObj[index])
+      .filter((key)=>{return key.startsWith("modelPrice")})
+      .map((key)=>{return modelObj[index][key]})
+      ipad_price.innerText = prices
+    })
+    //wifi cleular model price 넣기
+    ipad_Celprices.forEach((ipad_price,index)=>{
+      const prices = Object.keys(modelObj[index])
+      .filter((key)=>{return key.startsWith("modelCellularPrice")})
+      .map((key)=>{return modelObj[index][key]})
+      ipad_price.innerText = prices
+    })
+  }
+
+
 
   createPadImg()
   createcolor()
+  createPrice()
 }
 
 
