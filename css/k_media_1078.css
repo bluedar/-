@@ -21,7 +21,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr) ;
   }
-  .grid_col div:nth-child(3) {
+  .grid_col > div:nth-child(3) {
     display:none;
   }
 
