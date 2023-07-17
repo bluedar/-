@@ -4,7 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 /*top button*/
-
+a {
+  color: #ccc;
+}
 .top-btn {
   cursor: pointer;
   width: 60px;
@@ -166,6 +168,10 @@ body {
   color: black;
 }
 .header1 ul a {
+  color: #ccc;
+}
+.header1 ul li:nth-of-type(3) a,
+.header1 ul li:nth-of-type(8) a {
   color: black;
 }
 

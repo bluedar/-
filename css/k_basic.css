@@ -1,50 +1,41 @@
-@charset "UTF-8"; 
+@charset "UTF-8";
 @font-face {
-  font-family: 'TheJamsil5Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-family: "TheJamsil5Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 body {
-  font-family: 
-  "SF Pro KR", 
-  "SF Pro Display", 
-  "SF Pro Icons", 
-  "Apple Gothic", 
-  "HY Gulim", 
-  "MalgunGothic", 
-  "HY Dotum", 
-  "Lexi Gulim", 
-  "Helvetica Neue", 
-  "Helvetica", 
-  "Arial", 
-  sans-serif;
+  font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple Gothic",
+    "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
   word-spacing: -1px;
   letter-spacing: 0em;
 }
 
 a {
-  color:#06c;
+  color: #06c;
 }
 
 header {
-  display:block; 
-  width:100%;
-  height: 52px; 
-  background:#fff;
-  position:absolute; 
-  top:0;
+  display: block;
+  width: 100%;
+  height: 52px;
+  background: #fff;
+  position: absolute;
+  top: 0;
   z-index: 100;
-  position:fixed;
+  position: fixed;
 }
-
-
+header.absoluteA ul li a {
+  color: #ccc;
+}
 
 /* basic.css */
 @charset "UTF-8";
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-
 
 /*프로그레스 바*/
 .progress_bar_wrap {
@@ -72,7 +63,7 @@ header {
   background-color: #fff;
   overflow: hidden;
   transition: 0.5s;
-  border-bottom:1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .sub.on {
@@ -110,12 +101,11 @@ header {
   text-align: start;
 }
 
-
-  .list li a {
-  color:#000;
+.list li a {
+  color: #000;
 }
 .list li:first-child a {
-  color:#999
+  color: #999;
 }
 .list li a small {
   font-size: 0.6em;
@@ -189,6 +179,15 @@ body {
 }
 .header1 ul a {
   color: #000;
+}
+.absoluteA .header1 ul li:nth-of-type(3) a,
+.absoluteA .header1 ul li:nth-of-type(8) a {
+  color: black;
+}
+
+.nttA .header1 ul li:nth-of-type(3) a,
+.nttA .header1 ul li:nth-of-type(8) a {
+  color: yellow;
 }
 
 /* footer */
